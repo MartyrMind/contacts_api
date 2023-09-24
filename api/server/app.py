@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from app.server.routes.contact import router as ContactRouter
-
+from .routes.contact import router as ContactRouter
 app = FastAPI()
+
 
 app.include_router(ContactRouter, tags=["Contact"], prefix="/contact")
 

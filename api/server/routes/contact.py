@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Body
 from fastapi.encoders import jsonable_encoder
 
-from app.server.database import add_contact, delete_contact, retrieve_contact, retrieve_contacts, update_contact
-from app.server.models.contact import ContactSchema, UpdateContactModel, ResponseModel, ErrorResponseModel
+from ..database import add_contact, delete_contact, retrieve_contact, retrieve_contacts, update_contact
+from ..models.contact import ContactSchema, UpdateContactModel, ResponseModel, ErrorResponseModel
 
 router = APIRouter()
 
